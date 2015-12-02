@@ -12,6 +12,8 @@ BlinkyDancer.prototype.step = function(){
 }
 
 
+
+
   // var blinkyDancer = makeDancer(top, left, timeBetweenSteps);
   
   // // we plan to overwrite the step function below, but we still want the superclass step behavior to work,

@@ -31,5 +31,28 @@ $(document).ready(function(){
     window.dancers.push(dancer);
     $('body').append(dancer.$node);
   });
+  
+  $(".lineUpButton").on("click", function(){
+    for(var i = 0; i < window.dancers.length; i++) {
+      console.log(window.dancers[i]);
+      window.dancers[i].lineUp();
+    }
 
+  })
+
+  var collisions = function(collection){
+    
+    if(collection.length > 2) {
+    for(var i = 0; i < collection.length; i++) {
+      for(var j = 0; j <collection.length; j++) {
+        if(i !== j) {
+          var total = Math.pow((collection[i].top-collection[j].top), 2) + Math.pow((collection[i].left-collection[j].left), 2);
+          var distance = Math.sqrt(total);
+          //do something here when distance is 100 or something
+        }
+      }
+    }
+  }
+}
+  setInterval(function(){ collisions(window.dancers) }, 1000);
 });

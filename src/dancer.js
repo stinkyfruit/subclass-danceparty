@@ -21,6 +21,14 @@ Dancer.prototype.setPosition = function(){
   this.$node.css(styleSettings);
 }
 
+Dancer.prototype.lineUp = function() {
+  var middle = $("body").width() / 2 ;
+  this.$node.animate({left: middle + 'px'});
+}
+
+
+
+
   // var dancer = {};
 
   // // use jQuery to create an HTML <span> tag

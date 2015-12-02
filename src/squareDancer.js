@@ -14,5 +14,5 @@ squareDancer.prototype.step = function(){
   this.$node.animate({width: '300px', opacity: '0.8'}, "slow");
   this.$node.animate({height: '100px', opacity: '0.4'}, "slow");
   this.$node.animate({width: '100px', opacity: '0.8'}, "slow");
- 
 }
+
