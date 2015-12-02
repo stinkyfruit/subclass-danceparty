@@ -55,4 +55,7 @@ $(document).ready(function(){
   }
 }
   setInterval(function(){ collisions(window.dancers) }, 1000);
+
+
+
 });
